@@ -256,7 +256,7 @@ angular.module('ngS3upload.directives', []).
       },
       templateUrl: function(elm, attrs) {
         var theme = attrs.theme || ngS3Config.theme;
-        return 'theme/' + theme + '.html';
+        return 'templates/' + theme + '.html';
       }
     };
   }]);
