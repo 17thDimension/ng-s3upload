@@ -263,7 +263,7 @@ angular.module('ngS3upload.directives', []).
 angular.module('ngS3upload').run(['$templateCache', function($templateCache) {
   'use strict';
 
-  $templateCache.put('theme/bootstrap2.html',
+  $templateCache.put('templates/bootstrap2.html',
     "<div class=\"upload-wrap\">\n" +
     "  <button class=\"btn btn-primary\" type=\"button\"><span ng-if=\"!filename\">Choose file</span><span ng-if=\"filename\">Replace file</span></button>\n" +
     "  <a ng-href=\"{{ filename  }}\" target=\"_blank\" class=\"\" ng-if=\"filename\" > Stored file </a>\n" +
@@ -275,7 +275,7 @@ angular.module('ngS3upload').run(['$templateCache', function($templateCache) {
   );
 
 
-  $templateCache.put('theme/bootstrap3.html',
+  $templateCache.put('templates/bootstrap3.html',
     "<div class=\"upload-wrap\">\n" +
     "  <button class=\"btn btn-primary\" type=\"button\"><span ng-if=\"!filename\">Choose file</span><span ng-if=\"filename\">Replace file</span></button>\n" +
     "  <a ng-href=\"{{ filename }}\" target=\"_blank\" class=\"\" ng-if=\"filename\" > Stored file </a>\n" +
@@ -288,7 +288,7 @@ angular.module('ngS3upload').run(['$templateCache', function($templateCache) {
     "</div>"
   );
 
-  $templateCache.put('theme/image.html',
+  $templateCache.put('templates/image.html',
   "<div class=\"upload-wrap\">\n" +
   "  <button class=\"btn btn-primary\" type=\"button\"><span ng-if=\"!filename\">Choose</span><span ng-if=\"filename\">Replace file</span></button>\n" +
   "  <a ng-href=\"{{ filename }}\" target=\"_blank\" class=\"\" ng-if=\"filename\" > <img style='width:200px' ng-src={{filename}} /> </a>\n" +
@@ -302,7 +302,7 @@ angular.module('ngS3upload').run(['$templateCache', function($templateCache) {
 );
 
 
-$templateCache.put('theme/audio.html',
+$templateCache.put('templates/audio.html',
 "<div class=\"upload-wrap\">\n" +
 "  <button ng-hide='filename' class=\"btn btn-primary\" type=\"button\"><span ng-if=\"!filename\">Choose</span><span ng-if=\"filename\">Replace file</span></button>\n" +
 "  <a ng-href=\"{{ filename }}\" target=\"_blank\" class=\"\" ng-if=\"filename\" > 𝄞 </a>\n" +
@@ -314,7 +314,7 @@ $templateCache.put('theme/audio.html',
 "  <input accept='audio/*,video/*' type=\"file\" style=\"display: none\"/>\n" +
 "</div>"
 );
-  $templateCache.put('theme/video.html',
+  $templateCache.put('templates/video.html',
     "<div class=\"upload-wrap\">\n" +
     "  <button class=\"btn btn-primary\"  ng-if=\"!filename\" type=\"button\"><span>Choose</span></button>\n" +
     "  <div class=\"progress\">\n" +
